@@ -44,7 +44,11 @@ getWidth(context) - Pega a largura da tela.
 
 ## formatPrice(int)
 
-útil para formatar preço como int vindo do Firestore e deixar pronto para mostrar num Text().
+Útil para formatar preço como int vindo do Firestore e deixar pronto para mostrar num Text().
+
+## formatPriceToFirestore()
+
+Útil para salvar valores em dinheiro em String no Firestore.
 
 
 ## showCustomDialog
