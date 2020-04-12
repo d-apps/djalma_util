@@ -1,14 +1,50 @@
-# djalmautil
+# djalma_util
 
-A new Flutter package.
+Um pacote para facilitar a chamada de métodos que são comumente chamados nos projetos.
 
-## Getting Started
+### Lista de métodos
 
-This project is a starting point for a Dart
-[package](https://flutter.dev/developing-packages/),
-a library module containing code that can be shared easily across
-multiple Flutter or Dart projects.
+## ColorToMaterial(hex)
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+Converte uma Color para MaterialColor passando o hexadecimal de seis caracteres.
+
+## Navegação usando menos código
+
+- push(context, screen, RouteType.Material ou Cupertino);
+- pushReplacement(context, screen, RouteType.Material ou RouteType.Cupertino);
+- pop(context);
+- pushAndRemoveUntil(context, screen, RouteType.Material ou RouteType.Cupertino);
+
+## customSnackBar(key, mensagem, cor, duração)
+
+## dateFormatter()
+
+Formata a data vinda do DateTime para o Brasil.
+Sem dateFormatter: 1969-07-20 20:18:04 0000
+Com dateFormatter: 20/07/1969 20:18
+
+## firebaseErrorCheck(exception)
+
+Lê e já retorna a mensagem de erro em português pronta para o usuário da falha.
+
+## getFullAddressByCep(cep)
+
+Busca o endereço completo do usuário pelo CEP.
+
+## MediaQuery com menos código
+
+getHeight(context) - Pega a altura da tela
+getWidth(context) - Pega a largura da tela
+
+## formatPrice(int)
+
+útil para formatar preço como int vindo do Firestore e deixar pronto para mostrar num Text().
+
+## showCustomDialog
+
+Método pronto para abrir Dialog com opção de sim e não, opção não fecha ao tocar e opção sim excecuta
+o método enviado por parametro.
+
+## removeSpecialCharacters(text)
+
+Remove caracteres especiais de uma String e substitui por nada.
