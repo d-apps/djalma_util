@@ -6,3 +6,7 @@
 
 * Atualizado o readme
 
+## [1.0.2] - Atualizado o método getFullAddressByCep.
+
+* O método getFullAddressByCep recebe o cep, e opcionalmente o parametro number, que já traz o endereço com o numero e complemento caso adicionado.
+

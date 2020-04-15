@@ -1,25 +1,34 @@
+
+
 import 'package:djalmautil/src/remove_special_characters.dart';
+import 'package:flutter/material.dart';
 import 'package:search_cep/search_cep.dart';
 
-Future<String> getFullAddressByCep(String cep) async{
+Future<String> getFullAddressByCep({@required String cep, String number}) async{
 
   String address;
 
-    CepInfo cepInfo = await SearchCep.searchInfoByCep(
-        cep: removeSpecialCharacters(cep)
-    );
+  CepInfo cepInfo = await SearchCep.searchInfoByCep(
+      cep: removeSpecialCharacters(cep)
+  );
 
-    //print(cepInfo.localidade);
+  //print(cepInfo.localidade);
 
-    if(cepInfo.localidade != null){
+  if(cepInfo.localidade != null){
 
-      address = "${cepInfo.logradouro}, ${cepInfo.bairro}, ${cepInfo.localidade}"
-          " - ${cepInfo.uf}";
+    address = "${cepInfo.logradouro}, ${cepInfo.bairro} - ${cepInfo.localidade}"
+        " - ${cepInfo.uf}";
 
-    } else {
-      address = "Endereço não localizado, verifique o CEP digitado!";
+    if(number != null){
+
+      address = address.replaceAll(", ", ", $number - ");
+
     }
 
-    return address;
+  } else {
+    address = "Endereço não localizado, verifique o CEP digitado!";
+  }
+
+  return address;
 
 }
