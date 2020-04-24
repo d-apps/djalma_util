@@ -17,3 +17,7 @@
 ## [1.0.4] - Atualiação no parametro routeType.
 
 * Parametro routeType nos métodos de navegação será opcional, se não informado será usado MaterialPageRoute.
+
+## [1.0.5] - Removido OneSignal Helper.
+
+* Removido OneSignal Helper.
