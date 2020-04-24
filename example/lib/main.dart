@@ -83,7 +83,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
               customButton(
                 "push(context, Screen(), RouteType.Material ou RouteType.Cupertino)",
-                (){push(context, Page2(), RouteType.Cupertino);}
+                (){push(context, Page2(),);}
               ),
 
               spaceBetween(),
@@ -168,6 +168,20 @@ class _MyHomePageState extends State<MyHomePage> {
                     customSnackBar(
                         scaffoldKey: scaffoldKey,
                         message: "${getWidth(context)}",
+                        color: Colors.blue,
+                        duration: Duration(seconds: 2)
+                    );
+                  }
+              ),
+
+              spaceBetween(),
+
+              customButton(
+                  "getOrientation",
+                      (){
+                    customSnackBar(
+                        scaffoldKey: scaffoldKey,
+                        message: "${getOrientation(context)}",
                         color: Colors.blue,
                         duration: Duration(seconds: 2)
                     );

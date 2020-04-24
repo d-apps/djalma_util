@@ -13,3 +13,7 @@
 ## [1.0.3] - Adiconado novos métodos.
 
 * Adicionado método getOrientation e atualizado o método de busca de CEP.
+
+## [1.0.4] - Atualiação no parametro routeType.
+
+* Parametro routeType nos métodos de navegação será opcional, se não informado será usado MaterialPageRoute.
