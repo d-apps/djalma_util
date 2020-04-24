@@ -10,3 +10,6 @@
 
 * O método getFullAddressByCep recebe o cep, e opcionalmente o parametro number, que já traz o endereço com o numero e complemento caso adicionado.
 
+## [1.0.3] - Adiconado novos métodos.
+
+* Adicionado método getOrientation e atualizado o método de busca de CEP.

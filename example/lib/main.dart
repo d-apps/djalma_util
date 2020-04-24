@@ -1,6 +1,7 @@
 import 'package:djalmautil/djalmautil.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:search_cep/search_cep.dart';
 
 void main() {
   runApp(MyApp());
@@ -123,14 +124,20 @@ class _MyHomePageState extends State<MyHomePage> {
                 onPressed: () async{
 
                   if(cepController.text.isNotEmpty){
-                    String address = await getFullAddressByCep(cepController.text);
+                    CepInfo cepInfo = await getFullAddressByCep(cep: cepController.text);
 
-                    if(address != "Endereço não localizado, verifique o CEP digitado!"){
+                    if(cepInfo != null){
+
                       setState(() {
-                        cepController.text = address;
+                        cepController.text = "";
                       });
+
                     } else {
-                      customSnackBar(scaffoldKey: scaffoldKey, message: address, color: Colors.blue);
+                      customSnackBar(
+                          scaffoldKey: scaffoldKey,
+                          message: "Endereço não localizado, verifique o CEP digitado!",
+                          color: Colors.blue
+                      );
                     }
 
                   }

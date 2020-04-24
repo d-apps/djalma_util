@@ -7,3 +7,7 @@ double getHeight(BuildContext context){
 double getWidth(BuildContext context){
   return MediaQuery.of(context).size.width;
 }
+
+Orientation getOrientation(BuildContext context){
+  return MediaQuery.of(context).orientation;
+}

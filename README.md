@@ -2,7 +2,6 @@
 
 Um pacote para facilitar a chamada de métodos que são comumente chamados nos projetos.
 
-
 ## ColorToMaterial(hex)
 
 Converte uma Color para MaterialColor passando o hexadecimal de seis caracteres.
@@ -16,7 +15,7 @@ Converte uma Color para MaterialColor passando o hexadecimal de seis caracteres.
 - pushAndRemoveUntil(context, screen, RouteType.Material ou RouteType.Cupertino);
 
 
-## customSnackBar(key, mensagem, cor, duração)
+## customSnackBar(key, message, cor, duration)
 
 
 ## dateFormatter()
@@ -38,8 +37,13 @@ Busca o endereço completo do usuário pelo CEP.
 
 ## MediaQuery com menos código
 
-getHeight(context) - Pega a altura da tela.
-getWidth(context) - Pega a largura da tela.
+- getHeight(context) - Pega a altura da tela.
+
+- getWidth(context) - Pega a largura da tela.
+
+## getOrientation(context)
+
+Método para recuperar a orientação da tela.
 
 
 ## formatPrice(int)
@@ -59,4 +63,7 @@ o método enviado por parametro.
 
 ## removeSpecialCharacters(text)
 
-Remove caracteres especiais de uma String e substitui por nada.
+Remove caracteres especiais de uma String e substitui por vazio.
+
+
+
