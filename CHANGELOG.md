@@ -21,3 +21,8 @@
 ## [1.0.5] - Removido OneSignal Helper.
 
 * Removido OneSignal Helper.
+
+## [1.0.6] - Atualizado FirebaseChecker e removido MediaQueryHelper.
+
+* Adicionado outro check caso o email utilizado não esteja cadastrado.
+* Removido o MediaQuery Helper (getHeight, getWidth e getOrientation), recomendo usar o package Get ja que não precisa de Context.

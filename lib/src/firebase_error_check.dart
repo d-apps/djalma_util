@@ -30,9 +30,9 @@ firebaseErrorCheck(String exception){
 
     message = "O e-mail já está sendo usado!";
 
-  } else if (exception.contains("")) {
+  } else if (exception.contains("There is no user record corresponding to this identifier. The user may have been deleted. (auth/user-not-found)")) {
 
-    message = "Campo vázio!";
+    message = "E-mail inexistente!";
 
   }
 

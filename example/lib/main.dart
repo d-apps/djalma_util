@@ -148,48 +148,6 @@ class _MyHomePageState extends State<MyHomePage> {
 
               spaceBetween(),
 
-              customButton(
-                  "getHeight",
-                  (){
-                    customSnackBar(
-                        scaffoldKey: scaffoldKey,
-                        message: "${getHeight(context)}",
-                        color: Colors.blue,
-                        duration: Duration(seconds: 2)
-                    );
-                  }
-              ),
-
-              spaceBetween(),
-
-              customButton(
-                  "getWidth",
-                  (){
-                    customSnackBar(
-                        scaffoldKey: scaffoldKey,
-                        message: "${getWidth(context)}",
-                        color: Colors.blue,
-                        duration: Duration(seconds: 2)
-                    );
-                  }
-              ),
-
-              spaceBetween(),
-
-              customButton(
-                  "getOrientation",
-                      (){
-                    customSnackBar(
-                        scaffoldKey: scaffoldKey,
-                        message: "${getOrientation(context)}",
-                        color: Colors.blue,
-                        duration: Duration(seconds: 2)
-                    );
-                  }
-              ),
-
-              spaceBetween(),
-
               Text("formatPrice(valor): ${formatPrice(1000)}"),
 
               spaceBetween(),

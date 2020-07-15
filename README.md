@@ -35,17 +35,6 @@ Lê e já retorna a mensagem de erro em português pronta para o usuário da fal
 Busca o endereço completo do usuário pelo CEP.
 
 
-## MediaQuery com menos código
-
-- getHeight(context) - Pega a altura da tela.
-
-- getWidth(context) - Pega a largura da tela.
-
-## getOrientation(context)
-
-Método para recuperar a orientação da tela.
-
-
 ## formatPrice(int)
 
 Útil para formatar preço como int vindo do Firestore e deixar pronto para mostrar num Text().
