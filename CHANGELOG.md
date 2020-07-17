@@ -26,3 +26,7 @@
 
 * Adicionado outro check caso o email utilizado não esteja cadastrado.
 * Removido o MediaQuery Helper (getHeight, getWidth e getOrientation), recomendo usar o package Get ja que não precisa de Context.
+
+## [1.0.7] - WrapBuilder e ColumnBuilder.
+
+* Novos construtores adicionados para facilitar caso necessário implementação.

@@ -1,4 +1,4 @@
-firebaseErrorCheck(String exception){
+String firebaseErrorCheck(String exception){
 
   String message;
 

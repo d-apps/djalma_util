@@ -81,13 +81,6 @@ class _MyHomePageState extends State<MyHomePage> {
 
               spaceBetween(),
 
-              customButton(
-                "push(context, Screen(), RouteType.Material ou RouteType.Cupertino)",
-                (){push(context, Page2(),);}
-              ),
-
-              spaceBetween(),
-
               customButton("customSnackBar", (){
                 customSnackBar(
                     scaffoldKey: scaffoldKey,
@@ -152,51 +145,9 @@ class _MyHomePageState extends State<MyHomePage> {
 
               spaceBetween(),
 
-              customButton(
-                  "showCustomDialog",
-                  (){
-                    showCustomDialog(
-                      title: "Custom Dialog",
-                      message: "Mostrando Custom Dialog",
-                      voidCallback: (){},
-                      context: context
-                    );
-                  }
-              ),
-
-              spaceBetween(),
-
               Text("removeSpecialCharacters(Preço) ${removeSpecialCharacters("Preço")}"),
 
             ],
-          ),
-        ),
-      ),
-    );
-  }
-}
-
-class Page2 extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text("Page 2"),
-        centerTitle: true,
-      ),
-      body: Container(
-        child: Center(
-          child: SizedBox(
-            height: 50,
-            child: RaisedButton(
-              color: Theme.of(context).primaryColor,
-              child: Text("Calling pop(context)"),
-              onPressed: (){
-
-                pop(context);
-
-              },
-            ),
           ),
         ),
       ),
