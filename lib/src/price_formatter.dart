@@ -16,6 +16,7 @@ String formatPrice(int price){
 // Recebe Stiring e transforma em int para armazenar no Firetore
 int formatPriceToFirestore(String price){
 
+  price = price.replaceAll("R\$ ", "");
   price = price.replaceAll(",", "");
   price = price.replaceAll(".", "");
 

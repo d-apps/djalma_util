@@ -145,6 +145,10 @@ class _MyHomePageState extends State<MyHomePage> {
 
               spaceBetween(),
 
+              Text("formatPriceToFirestore(valor): ${formatPriceToFirestore("R\$ 10,00")}"),
+
+              spaceBetween(),
+
               Text("removeSpecialCharacters(Preço) ${removeSpecialCharacters("Preço")}"),
 
             ],
