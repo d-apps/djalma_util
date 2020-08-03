@@ -6,17 +6,7 @@ Um pacote para facilitar a chamada de métodos que são comumente chamados nos p
 
 Converte uma Color para MaterialColor passando o hexadecimal de seis caracteres.
 
-
-## Navegação usando menos código
-
-- push(context, screen, RouteType.Material ou Cupertino);
-- pushReplacement(context, screen, RouteType.Material ou RouteType.Cupertino);
-- pop(context);
-- pushAndRemoveUntil(context, screen, RouteType.Material ou RouteType.Cupertino);
-
-
 ## customSnackBar(key, message, cor, duration)
-
 
 ## dateFormatter()
 
@@ -42,7 +32,6 @@ Busca o endereço completo do usuário pelo CEP.
 ## formatPriceToFirestore()
 
 Útil para salvar valores em dinheiro em String no Firestore.
-
 
 ## showCustomDialog
 

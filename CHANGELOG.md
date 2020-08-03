@@ -1,6 +1,8 @@
+## [1.0.9] - Removido navegação.
+
 ## [1.0.8] - Atualizado o método formatPriceToFirestore.
 
-* Incluído checagem se o preço possui simbolo "R$ " para removê-lo.
+* Incluído checagem se o preço possui simbolo "R$ " para removê-lo ao enviar para o Firestore.
 
 ## [1.0.7] - WrapBuilder e ColumnBuilder.
 
