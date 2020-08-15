@@ -1,7 +1,6 @@
 library djalmautil;
 
 export 'src/color_to_materialcolor.dart';
-export 'src/custom_snackbar.dart';
 export 'src/date_formatter.dart';
 export 'src/firebase_error_check.dart';
 export 'src/get_address.dart';

@@ -81,16 +81,6 @@ class _MyHomePageState extends State<MyHomePage> {
 
               spaceBetween(),
 
-              customButton("customSnackBar", (){
-                customSnackBar(
-                    scaffoldKey: scaffoldKey,
-                    message: "Teste Custom SnackBar de 5 Segundos",
-                    color: Colors.blue,
-                );
-              }),
-
-              spaceBetween(),
-
               Text("dateFormatter ${dateFormatter(DateTime.now().toString())}"),
 
               spaceBetween(),
@@ -125,12 +115,6 @@ class _MyHomePageState extends State<MyHomePage> {
                         cepController.text = "";
                       });
 
-                    } else {
-                      customSnackBar(
-                          scaffoldKey: scaffoldKey,
-                          message: "Endereço não localizado, verifique o CEP digitado!",
-                          color: Colors.blue
-                      );
                     }
 
                   }

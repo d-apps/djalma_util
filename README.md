@@ -2,11 +2,9 @@
 
 Um pacote para facilitar a chamada de métodos que são comumente chamados nos projetos.
 
-## ColorToMaterial(hex)
+## ColorToMaterialColor(hex)
 
 Converte uma Color para MaterialColor passando o hexadecimal de seis caracteres.
-
-## customSnackBar(key, message, cor, duration)
 
 ## dateFormatter()
 
