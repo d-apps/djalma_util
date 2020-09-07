@@ -44,3 +44,8 @@ Remove caracteres especiais de uma String e substitui por vazio.
 
 ## WrapBuilder e ColumnBuilder
 
+## Conexão com a internet
+
+O método InternetConnection.isInternetAvailable() retorna true se houver conectividade com a internet.
+
+

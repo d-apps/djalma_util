@@ -9,3 +9,4 @@ export 'src/price_formatter.dart';
 export 'src/remove_special_characters.dart';
 export 'src/wrap_builder.dart';
 export 'src/column_builder.dart';
+export 'src/internet_connection.dart';
