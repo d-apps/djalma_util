@@ -1,3 +1,5 @@
+## [1.1.3] - Adicionado SnackBar no método isInternetAvailable.
+
 ## [1.1.2] - Adicionado método para checar se existe conexão com a internet.
 
 ## [1.1.0] - Removido custom snackbar.
