@@ -20,7 +20,7 @@ class InternetConnection {
     } on SocketException catch (_) {
       print('NOT CONNECTED!');
 
-      customSnackBar(
+      _customSnackBar(
           message: "Você está sem conexão com a internet!",
           backgroundColor: Colors.redAccent,
           duration: Duration(seconds: 10)
@@ -36,7 +36,7 @@ class InternetConnection {
 
 }
 
-void customSnackBar({String title, String message, Color backgroundColor,
+void _customSnackBar({String title, String message, Color backgroundColor,
   SnackPosition snackPosition, Color colorText, Duration duration}){
 
   Get.snackbar(
