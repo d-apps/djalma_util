@@ -133,7 +133,11 @@ class _MyHomePageState extends State<MyHomePage> {
 
               spaceBetween(),
 
-              Text("removeSpecialCharacters(Preço) ${removeSpecialCharacters("Preço")}"),
+              Text("removeSpecialCharacters(Preço): ${removeSpecialCharacters("Preço")}"),
+
+              spaceBetween(),
+
+              Text("getMonthName: ${getMonthName(2)}"),
 
             ],
           ),

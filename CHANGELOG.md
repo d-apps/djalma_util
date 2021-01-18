@@ -1,3 +1,8 @@
+## [1.2.4] - Atualizado o método firebaseErrorCheck e adicionado getMonthName.
+
+* O método firebaseErrorCheck, caso o erro não seja encontrada, retorna a prória exceptoin. 
+* Foi adicionado o método get
+
 ## [1.1.4] - Alterado a SnackBar de aviso de conexão para privada.
 
 ## [1.1.3] - Adicionado SnackBar no método isInternetAvailable.

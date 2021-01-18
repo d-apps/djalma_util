@@ -34,6 +34,11 @@ String firebaseErrorCheck(String exception){
 
     message = "E-mail inexistente!";
 
+  } else if (exception.contains("A document cannot be written because it exceeds the maximum size allowed.")) {
+    message = "A document cannot be written because it exceeds the maximum size allowed.";
+
+  } else {
+    return exception;
   }
 
   return message;

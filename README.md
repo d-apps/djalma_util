@@ -31,11 +31,6 @@ Busca o endereço completo do usuário pelo CEP.
 
 Útil para salvar valores em dinheiro em String no Firestore.
 
-## showCustomDialog
-
-Método pronto para abrir Dialog com opção de sim e não, opção não fecha ao tocar e opção sim excecuta
-o método enviado por parametro.
-
 
 ## removeSpecialCharacters(text)
 
@@ -47,5 +42,9 @@ Remove caracteres especiais de uma String e substitui por vazio.
 ## Conexão com a internet
 
 O método InternetConnection.isInternetAvailable() retorna true se houver conectividade com a internet.
+
+## getMonthName(int mes)
+
+Retorna o nome do mês em português.
 
 
