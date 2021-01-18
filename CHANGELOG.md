@@ -1,3 +1,8 @@
+## [1.4.4] - Adicionado os métodos getMonths e getYears(int startFrom)
+
+* getMonths retorna uma lista de string com os nome dos meses.
+* getYears retorna uma lista de anos começando pelo qual for informado no parametro.
+
 ## [1.3.4] - Adicionado método getMonthNumber()
 
 * Retorna o numero do mes, um numero apenas ( Janeiro = 1)

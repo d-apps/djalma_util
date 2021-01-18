@@ -75,3 +75,39 @@ String getMonthName(int month) {
 
  }
 
+List<String> getMonths() {
+
+  List<String> months = [
+
+    "Janeiro",
+    "Fevereiro",
+    "Março",
+    "Abril",
+    "Maio",
+    "Junho",
+    "Julho",
+    "Agosto",
+    "Setembro",
+    "Outubro",
+    "Novembro",
+    "Dezembro",
+
+  ];
+
+  return months;
+
+}
+
+List<String> getYears(int startFrom){
+
+  List<String> years = [];
+
+  for(int i= 0; i < 40; i++){
+
+    years.add((startFrom+i).toString());
+  }
+
+  return years;
+
+}
+

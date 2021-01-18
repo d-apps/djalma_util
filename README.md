@@ -51,4 +51,9 @@ Retorna o nome do mês em português.
 
 Retorna o numero do mes, um numero apenas ( Janeiro = 1)
 
+## getMonths e getYears(int startFrom)
+
+getMonths retorna uma lista de string com os nome dos meses.
+getYears retorna uma lista de anos começando pelo qual for informado no parametro.
+
 
