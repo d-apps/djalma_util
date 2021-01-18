@@ -139,6 +139,10 @@ class _MyHomePageState extends State<MyHomePage> {
 
               Text("getMonthName: ${getMonthName(2)}"),
 
+              spaceBetween(),
+
+              Text("getMonthNumber: ${getMonthNumber("Janeiro")}"),
+
             ],
           ),
         ),

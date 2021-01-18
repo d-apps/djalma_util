@@ -1,6 +1,10 @@
+## [1.3.4] - Adicionado método getMonthNumber()
+
+* Retorna o numero do mes, um numero apenas ( Janeiro = 1)
+
 ## [1.2.4] - Atualizado o método firebaseErrorCheck e adicionado getMonthName.
 
-* O método firebaseErrorCheck, caso o erro não seja encontrada, retorna a prória exceptoin. 
+* O método firebaseErrorCheck, caso o erro não seja encontrada, retorna a prória exceptoin.
 * Foi adicionado o método get
 
 ## [1.1.4] - Alterado a SnackBar de aviso de conexão para privada.

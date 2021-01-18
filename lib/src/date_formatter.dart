@@ -10,10 +10,8 @@ String dateFormatter(String date){
 }
 
 // ignore: missing_return
-String getMonthName(int month){
-
-  switch(month){
-
+String getMonthName(int month) {
+  switch (month) {
     case 1 :
       return "Janeiro";
     case 2 :
@@ -41,5 +39,39 @@ String getMonthName(int month){
     default:
       return "O mês informado é inválido!";
   }
-
 }
+
+  // ignore: missing_return
+ int getMonthNumber(String month) {
+
+   switch (month) {
+     case "Janeiro" :
+       return 1;
+     case "Fevereiro" :
+       return 2;
+     case "Março" :
+       return 3;
+     case "Abril":
+       return 4;
+     case "Maio":
+       return 5;
+     case "Junho":
+       return 6;
+     case "Julho":
+       return 7;
+     case "Agosto":
+       return 8;
+     case "Setembro":
+       return 9;
+     case "Outubro":
+       return 10;
+     case "Novembro" :
+       return 11;
+     case "Dezembro":
+       return 12;
+     default:
+       return 0;
+   }
+
+ }
+

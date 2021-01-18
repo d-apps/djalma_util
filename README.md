@@ -47,4 +47,8 @@ O método InternetConnection.isInternetAvailable() retorna true se houver conect
 
 Retorna o nome do mês em português.
 
+## getMonthNumber(String month)
+
+Retorna o numero do mes, um numero apenas ( Janeiro = 1)
+
 
