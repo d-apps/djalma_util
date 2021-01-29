@@ -1,3 +1,8 @@
+
+## [1.5.4] - Adicionado o método dateToDateTime
+
+* Retorna um DateTime a partir de um data (String) informada no formato DD/MM/AAAA.
+
 ## [1.4.4] - Adicionado os métodos getMonths e getYears(int startFrom)
 
 * getMonths retorna uma lista de string com os nome dos meses.

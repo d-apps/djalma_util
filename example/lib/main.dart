@@ -85,6 +85,10 @@ class _MyHomePageState extends State<MyHomePage> {
 
               spaceBetween(),
 
+              Text("dateToDateTime (01/12/2020) ${dateToDateTime("01/12/2020")}"),
+
+              spaceBetween(),
+
               Text("Chamando firebaseErrorCheck(erro), no lugar do 'erro', passe a Exception"
                   "do Try e Catch do Firebase que retorna a mensagem de erro automatico"),
 

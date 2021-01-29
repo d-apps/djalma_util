@@ -57,3 +57,6 @@ getMonths retorna uma lista de string com os nome dos meses.
 getYears retorna uma lista de anos começando pelo qual for informado no parametro.
 
 
+## dateToDateTime
+
+Retorna um DateTime a partir de um data (String) informada no formato DD/MM/AAAA.
