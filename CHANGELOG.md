@@ -1,3 +1,4 @@
+## [1.5.5] - Removido o método getFullAddressByCep.
 
 ## [1.5.4] - Adicionado o método dateToDateTime
 

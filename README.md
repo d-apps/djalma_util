@@ -12,16 +12,9 @@ Formata a data vinda do DateTime para o Brasil.
 Sem dateFormatter: 1969-07-20 20:18:04 0000
 Com dateFormatter: 20/07/1969 20:18
 
-
 ## firebaseErrorCheck(exception)
 
 Lê e já retorna a mensagem de erro em português pronta para o usuário da falha.
-
-
-## getFullAddressByCep(cep)
-
-Busca o endereço completo do usuário pelo CEP.
-
 
 ## formatPrice(int)
 
