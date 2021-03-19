@@ -1,6 +1,6 @@
 name: djalmautil
 description: Package to help calling common methods in projects.
-version: 1.5.5
+version: 1.5.6
 homepage: https://github.com/d-apps/djalma_util
 
 environment:
