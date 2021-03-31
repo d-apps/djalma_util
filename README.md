@@ -53,3 +53,8 @@ getYears retorna uma lista de anos começando pelo qual for informado no paramet
 ## dateToDateTime
 
 Retorna um DateTime a partir de um data (String) informada no formato DD/MM/AAAA.
+
+# InternetConnection.isInternetAvailable(host, path)
+
+Checa se o host e o path informados estão acessíveis.
+

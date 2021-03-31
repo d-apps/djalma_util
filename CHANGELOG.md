@@ -1,3 +1,5 @@
+## [1.6.7] - Adicionado método InternetConnection.isInternetAvailable(host, path).
+
 ## [1.5.7] - Removido o plugin search_cep.
 
 ## [1.5.6] - Removido o plugin dio.

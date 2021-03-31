@@ -95,6 +95,33 @@ class _MyHomePageState extends State<MyHomePage> {
 
               Text("getMonthNumber: ${getMonths()}"),
 
+              spaceBetween(),
+
+              ElevatedButton(
+                child: Text("isInternetAvailable()"),
+                onPressed: () async{
+
+                  final res = await InternetConnection.isInternetAvailable();
+                  print(res);
+
+                },
+              ),
+
+              spaceBetween(),
+
+              ElevatedButton(
+                child: Text("isUrlAvailable(host: 'www.google.com', '/doodles')"),
+                onPressed: () async {
+
+                  final res = await InternetConnection.isUrlAvailable(
+                      'www.google.com', '/doodles'
+                  );
+
+                  print(res);
+
+                },
+              ),
+
             ],
           ),
         ),
