@@ -1,3 +1,5 @@
+## [1.6.8] - Aumentando o range de versões do package http.
+
 ## [1.6.7] - Adicionado método InternetConnection.isInternetAvailable(host, path).
 
 ## [1.5.7] - Removido o plugin search_cep.
