@@ -1,3 +1,5 @@
+## [1.6.9] - Aumentando o range de versões do package get.
+
 ## [1.6.8] - Aumentando o range de versões do package http.
 
 ## [1.6.7] - Adicionado método InternetConnection.isInternetAvailable(host, path).
