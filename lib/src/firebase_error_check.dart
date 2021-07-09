@@ -1,6 +1,6 @@
 String firebaseErrorCheck(String exception){
 
-  String message;
+  String message = "";
 
   if(exception.contains("ERROR_USER_NOT_FOUND")){
 

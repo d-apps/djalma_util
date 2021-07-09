@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 
 class ColumnBuilder extends StatelessWidget {
-  final IndexedWidgetBuilder itemBuilder;
-  final MainAxisAlignment mainAxisAlignment;
-  final MainAxisSize mainAxisSize;
-  final CrossAxisAlignment crossAxisAlignment;
-  final TextDirection textDirection;
-  final VerticalDirection verticalDirection;
+  final IndexedWidgetBuilder? itemBuilder;
+  final MainAxisAlignment? mainAxisAlignment;
+  final MainAxisSize? mainAxisSize;
+  final CrossAxisAlignment? crossAxisAlignment;
+  final TextDirection? textDirection;
+  final VerticalDirection? verticalDirection;
   final int itemCount;
 
-  const ColumnBuilder({
-    Key key,
-    @required this.itemBuilder,
-    @required this.itemCount,
+  const ColumnBuilder(
+    this.itemBuilder,
+    this.itemCount,{
+    Key? key,
     this.mainAxisAlignment: MainAxisAlignment.start,
     this.mainAxisSize: MainAxisSize.max,
     this.crossAxisAlignment: CrossAxisAlignment.center,
@@ -25,7 +25,7 @@ class ColumnBuilder extends StatelessWidget {
 
     return new Column(
     children: new List.generate(this.itemCount,
-    (index) => this.itemBuilder(context, index)).toList(),
+    (index) => this.itemBuilder!(context, index)).toList(),
     );
   }
 }

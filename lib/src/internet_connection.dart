@@ -6,6 +6,8 @@ class InternetConnection {
 
   static Future<bool> isUrlAvailable(String host, String path) async {
 
+    bool res = false;
+
     http.Client client = http.Client();
 
     try{
@@ -16,7 +18,7 @@ class InternetConnection {
 
       if(response.statusCode == 200){
         print('URL AVAILABLE!');
-        return true;
+        res = true;
       }
 
     } catch(e){
@@ -28,9 +30,13 @@ class InternetConnection {
       client.close();
     }
 
+    return res;
+
   }
 
   static Future<bool> isInternetAvailable() async {
+
+    bool res = false;
 
     print("VERIFICANDO CONEXÃO COM A INTERNET...");
 
@@ -39,7 +45,7 @@ class InternetConnection {
       if (list.isNotEmpty && list[0].rawAddress.isNotEmpty) {
 
         print('CONNECTED!');
-        return true;
+        res = true;
 
       }
     } on SocketException catch (_) {
@@ -48,6 +54,9 @@ class InternetConnection {
       return false;
 
     }
+
+    return res;
+
 
   }
 

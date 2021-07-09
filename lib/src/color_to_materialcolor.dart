@@ -17,7 +17,7 @@ MaterialColor colorToMaterialColor(String colorHexSixCharacters){
     900:Color.fromRGBO(136,14,79, 1),
   };
 
-  int primary = int.tryParse("0xFF$colorHexSixCharacters");
+  int primary = int.tryParse("0xFF$colorHexSixCharacters")!;
 
   return MaterialColor(primary, color);
 

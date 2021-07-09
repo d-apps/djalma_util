@@ -20,6 +20,6 @@ int formatPriceToFirestore(String price){
   price = price.replaceAll(",", "");
   price = price.replaceAll(".", "");
 
-  return int.tryParse(price);
+  return int.tryParse(price)!;
 
 }

@@ -1,3 +1,5 @@
+## [1.7.0] - Migrated to null satefy.
+
 ## [1.6.9] - Aumentando o range de versões do package get.
 
 ## [1.6.8] - Aumentando o range de versões do package http.

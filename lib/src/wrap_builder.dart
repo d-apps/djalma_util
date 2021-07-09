@@ -10,13 +10,13 @@ class WrapBuilder extends StatelessWidget {
   final WrapAlignment runAlignment;
   final double runSpacing;
   final WrapCrossAlignment crossAxisAlignment;
-  final TextDirection textDirection;
+  final TextDirection? textDirection;
   final VerticalDirection verticalDirection;
 
-  const WrapBuilder({
-    Key key,
-    @required this.itemBuilder,
-    @required this.itemCount,
+  const WrapBuilder(
+      this.itemBuilder,
+      this.itemCount,{
+    Key? key,
     this.textDirection,
     this.verticalDirection: VerticalDirection.down,
     this.direction = Axis.horizontal,

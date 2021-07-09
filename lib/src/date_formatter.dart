@@ -12,9 +12,9 @@ String dateFormatter(String date){
 DateTime dateToDateTime(String date){
 
   print(date);
-  int day = int.tryParse(date.substring(0, 2));
-  int month = int.tryParse(date.substring(3, 5));
-  int year = int.tryParse(date.substring(6, 10));
+  int day = int.tryParse(date.substring(0, 2))!;
+  int month = int.tryParse(date.substring(3, 5))!;
+  int year = int.tryParse(date.substring(6, 10))!;
 
   DateTime dateTime = DateTime(
     year,
