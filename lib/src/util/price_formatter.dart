@@ -4,7 +4,7 @@ import 'package:money2/money2.dart';
 String formatPrice(int price){
 
   //*
-  Currency brlCurrency = Currency.create(
+  final Currency brlCurrency = Currency.create(
       'BRL', 2, symbol: 'R\$', pattern: 'S 0,00', invertSeparators: true
   );
 
@@ -17,10 +17,16 @@ String formatPrice(int price){
 // Recebe Stiring e transforma em int para armazenar no Firetore
 int formatPriceToFirestore(String price){
 
-  price = price.replaceAll("R\$ ", "");
-  price = price.replaceAll(",", "");
-  price = price.replaceAll(".", "");
+  /*
+  final priceNoCharacter = price.replaceAll("R\$ ", "");
+  final priceNoComma = priceNoCharacter.replaceAll(",", "");
+  final priceNoPoint = priceNoComma.replaceAll(".", "");
+   */
 
-  return int.tryParse(price)!;
+  final newPrice = price.substring(2, price.length).replaceAll(",", "").replaceAll(".", "");
+
+  //print(newPrice);
+
+  return int.tryParse(newPrice) ?? 0;
 
 }

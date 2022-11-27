@@ -1,17 +1,15 @@
 name: djalmautil
 description: Package to help calling common methods in projects.
-version: 1.7.1-beta.1
+version: 1.8.0
 homepage: https://github.com/d-apps/djalma_util
 
 environment:
-  sdk: ">=2.12.0 <3.0.0"
+  sdk: ">=2.15.3 <3.0.0"
 
 dependencies:
 
   intl: ^0.17.0
-  money2: ^3.0.0-beta.6
-  get: ^4.1.4
-  http: ^0.13.3
+  money2: ^3.3.0
 
   flutter:
     sdk: flutter
