@@ -10,6 +10,7 @@ dependencies:
 
   intl: ^0.17.0
   money2: ^3.3.0
+  http: ^0.13.5
 
   flutter:
     sdk: flutter

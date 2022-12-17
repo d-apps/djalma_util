@@ -39,3 +39,8 @@ Retorna o numero do mes, um numero apenas ( Janeiro = 1)
 getMonths retorna uma lista de string com os nome dos meses.
 getYears retorna uma lista de anos começando pelo qual for informado no parametro.
 
+## InternetConnection
+
+isUrlAvailable checa se a url é valida
+isInternetAvailable checa se tem conexão com a internet.
+

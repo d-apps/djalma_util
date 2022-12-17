@@ -1,3 +1,7 @@
+## [1.9.0]
+
+* Adicionado os métodos de checagem de url e conexão com a internet.
+
 ## [1.8.0]
 
 * Removido alguns métodos.
