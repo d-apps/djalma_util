@@ -1,14 +1,13 @@
 name: djalmautil
 description: Package to help calling common methods in projects.
-version: 1.8.0
+version: 1.9.2
 homepage: https://github.com/d-apps/djalma_util
 
 environment:
-  sdk: ">=2.15.3 <3.0.0"
+  sdk: ">=2.18.3 <3.0.0"
 
 dependencies:
 
-  intl: ^0.17.0
   money2: ^3.3.0
   http: ^0.13.5
 

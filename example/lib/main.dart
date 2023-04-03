@@ -17,13 +17,14 @@ class MyApp extends StatelessWidget {
         primarySwatch: colorToMaterialColor("5e35b1"),
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MyHomePage(title: 'Djalma Util'),
+      home: const MyHomePage(title: 'Djalma Util'),
     );
   }
 }
 
 class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
+
+  const MyHomePage({required this.title, super.key});
 
   final String title;
 
@@ -33,12 +34,10 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
 
-
-
   @override
   Widget build(BuildContext context) {
 
-    Widget customVerticalSpace(){
+    Widget customVerticalSpacer(){
       return const SizedBox(height: 20,);
     }
 
@@ -47,7 +46,7 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
         centerTitle: true,
       ),
-      body: Container(
+      body: Padding(
         padding: const EdgeInsets.all(16),
         child: SingleChildScrollView(
           child: Column(
@@ -56,36 +55,36 @@ class _MyHomePageState extends State<MyHomePage> {
             children: [
 
               Text(
-                "O uso de colorToMaterialColor para transformar uma Color em MaterialColor foi usando no main"
+                "O uso de colorToMaterialColor para transformar uma Color em MaterialColor foi usado no main"
                     " dentro do ThemeData, primarySwatch, ja que ele só aceita MaterialColor e não Color"
               ),
 
-              customVerticalSpace(),
+              customVerticalSpacer(),
 
               Text("Chamando firebaseErrorCheck(erro), no lugar do 'erro', passe a Exception"
                   "do Try e Catch do Firebase que retorna a mensagem de erro automatico"),
 
-              customVerticalSpace(),
+              customVerticalSpacer(),
 
               Text("formatPrice(valor): ${formatPrice(1000)}"),
 
-              customVerticalSpace(),
+              customVerticalSpacer(),
 
               Text("formatPriceToFirestore(valor): ${formatPriceToFirestore("R\$ 10,00")}"),
 
-              customVerticalSpace(),
+              customVerticalSpacer(),
 
               Text("removeSpecialCharacters(Preço): ${"Preço".removeSpecialCharacters()}"),
 
-              customVerticalSpace(),
+              customVerticalSpacer(),
 
               Text("getMonthName: ${getMonthName(12)}"),
 
-              customVerticalSpace(),
+              customVerticalSpacer(),
 
               Text("getMonthNumber: ${getMonthNumber("Janeiro")}"),
 
-              customVerticalSpace(),
+              customVerticalSpacer(),
 
               Text("getMonthNumber: ${getMonths()}"),
 

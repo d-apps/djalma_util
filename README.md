@@ -1,6 +1,6 @@
 # djalma_util
 
-This package was made to stop creating utils classes to call common methods in projects.
+Este package foi criado para chamar método comuns nos projetos Flutter.
 
 ## ColorToMaterialColor(String colorHexSixCharacters)
 
@@ -19,7 +19,6 @@ Retorna a mensagem de erro em português referente a falha.
 ## formatPriceToFirestore(String price)
 
 Útil para salvar valores em dinheiro em String no Firestore.
-
 
 ## removeSpecialCharacters(String name)
 

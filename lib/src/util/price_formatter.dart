@@ -1,3 +1,4 @@
+
 import 'package:money2/money2.dart';
 
 // Mostra o preço formatado para moeda brasileira dentro de Text
@@ -8,7 +9,7 @@ String formatPrice(int price){
       'BRL', 2, symbol: 'R\$', pattern: 'S 0,00', invertSeparators: true
   );
 
-  Money money = Money.fromInt(price, code: "BRL");
+  final Money money = Money.fromIntWithCurrency(price, brlCurrency);
 
   return money.toString();
 

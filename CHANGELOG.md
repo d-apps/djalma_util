@@ -1,3 +1,11 @@
+## [1.9.2]
+
+* Removido a lib intl.
+
+## [1.9.1]
+
+* Correção export da classe InternetConnection.
+
 ## [1.9.0]
 
 * Adicionado os métodos de checagem de url e conexão com a internet.
